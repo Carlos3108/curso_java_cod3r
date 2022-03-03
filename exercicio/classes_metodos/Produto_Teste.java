@@ -2,10 +2,7 @@ package classes_metodos;
 
 public class Produto_Teste {
     public static void main(String[] args) {
-        Produto p1 = new Produto();
-        p1.nome = "Notebook";
-        p1.preco = 3000.00;
-        p1.desconto = 0.15;
+        Produto p1 = new Produto("Notebook", 3000.00, 0.15);
 
         var p2 = new Produto();
         p2.nome = "Caneta";
