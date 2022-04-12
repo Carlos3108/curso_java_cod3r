@@ -3,19 +3,22 @@ package classes_metodos;
 public class Produto {
     String nome;
     double preco;
-    double desconto;
+    static double desconto = 0.10;
 
     Produto(){
-        //Dessa maneira o construtor construtor volta a existir
+        //Dessa maneira o construtor volta a existir
     }
 
-    Produto(String nomeInicial, double precoInicial, double descontoInicial){
+    Produto(String nomeInicial, double precoInicial){
         nome = nomeInicial;
         preco = precoInicial;
-        desconto = descontoInicial;
     }
 
     double valor (){
         return preco * (1 - desconto);
+    }
+
+    double valor (double descontoDoGerente){
+        return preco * (1 - desconto + descontoDoGerente);
     }
 }
