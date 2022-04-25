@@ -1,7 +1,5 @@
 package classes_metodos.exercicio_data;
 
-import classes_metodos.exercicio_data.Data;
-
 public class ValorVsReferencia {
     public static void main(String[] args) {
         double a = 2;
