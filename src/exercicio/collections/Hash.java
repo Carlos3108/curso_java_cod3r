@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Hash {
     public static void main(String[] args) {
-        HashSet<Usuario> usuarios = new HashSet<Usuario>();
+        HashSet<Usuario> usuarios = new HashSet<>();
         usuarios.add(new Usuario("Henrique"));
         usuarios.add(new Usuario("Matheus"));
         usuarios.add(new Usuario("Gabriel"));
