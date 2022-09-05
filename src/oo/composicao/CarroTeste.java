@@ -19,5 +19,7 @@ public class CarroTeste {
 
         c1.desligar();
         System.out.println(c1.estaLigado());
+
+        System.out.println(c1.motor.carro.motor.carro.motor.giros());
     }
 }
