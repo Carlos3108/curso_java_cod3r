@@ -14,7 +14,6 @@ public class TesteDesafio {
         cliente.compras.add(compra1);
         cliente.compras.add(compra2);
 
-        System.out.println(cliente.getValorTotal()
-        );
+        System.out.println(cliente.getValorTotal());
     }
 }
