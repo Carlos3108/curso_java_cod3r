@@ -2,11 +2,16 @@ package oo.heranca;
 
 public class Player {
 
-    int vida = 100;
-    int x;
-    int y;
+    public int vida = 100;
+    public int x;
+    public int y;
 
-    boolean atacar(Player oponente){
+    protected Player(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public boolean atacar(Player oponente){
         int deltaX = Math.abs(x - oponente.x);
         int deltaY = Math.abs(y - oponente.y);
         if (deltaX == 0 && deltaY == 1){
@@ -19,7 +24,7 @@ public class Player {
         return false;
         }
     }
-    boolean andar(Direcao direcao){
+    public boolean andar(Direcao direcao){
         switch (direcao) {
             case NORTE -> y++;
             case SUL -> y--;
